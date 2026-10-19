@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFF8FB">
+<title>Chúc mừng 20/10</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="petals" aria-hidden="true"></canvas>
+<main>
+  <section class="cover" id="cover">
+    <p class="for" id="for"></p>
+    <p class="num" role="img" aria-label="20/10"><span aria-hidden="true" style="--i:0">2</span><span aria-hidden="true" style="--i:1">0</span><span aria-hidden="true" style="--i:2">/</span><span aria-hidden="true" style="--i:3">1</span><span aria-hidden="true" style="--i:4">0</span></p>
+    <h1>Ngày Phụ nữ Việt Nam</h1>
+    <button class="btn" id="open" type="button">Mở lời chúc</button>
+  </section>
+  <article class="letter" id="letter" hidden>
+    <span class="badge">20/10</span>
+    <p class="greet" id="greet"></p>
+    <div class="body" id="msg"></div>
+    <p class="sig" id="sig"></p>
+  </article>
+  <section class="gallery" id="gallery" hidden>
+    <h2>Những khoảnh khắc đáng nhớ</h2>
+    <div class="collage">
+    <div class="col">
+      <button class="tile" type="button" style="--r:4/3;--p:50% 50%" aria-label="Xem ảnh lớn: Cả nhà đứng giữa vườn mận nở trắng hoa"><img src="images/anh2.jpg" alt="Cả nhà đứng giữa vườn mận nở trắng hoa" decoding="async"></button>
+      <button class="tile" type="button" style="--r:4/5;--p:50% 45%" aria-label="Xem ảnh lớn: Cả nhà chụp bên cây hồng chi chít quả chín"><img src="images/anh1.jpg" alt="Cả nhà chụp bên cây hồng chi chít quả chín" decoding="async"></button>
+      <button class="tile" type="button" style="--r:1/1;--p:50% 70%" aria-label="Xem ảnh lớn: Đứng bên gốc cây lớn trong công viên"><img src="images/anh5.jpg" alt="Đứng bên gốc cây lớn trong công viên" decoding="async"></button>
+    </div>
+    <div class="col off">
+      <button class="tile" type="button" style="--r:2/3;--p:50% 50%" aria-label="Xem ảnh lớn: Bên cành hoa anh đào hồng"><img src="images/anh3.jpg" alt="Bên cành hoa anh đào hồng" decoding="async"></button>
+      <button class="tile" type="button" style="--r:4/5;--p:50% 55%" aria-label="Xem ảnh lớn: Giữa phố đi bộ có tháp đồng hồ kiểu Nhật"><img src="images/anh4.jpg" alt="Giữa phố đi bộ có tháp đồng hồ kiểu Nhật" decoding="async"></button>
+    </div>
+    </div>
+  </section>
+</main>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+  <button class="lb-x" id="lbx" type="button" aria-label="Đóng">×</button>
+  <button class="lb-n lb-prev" id="lbp" type="button" aria-label="Ảnh trước">‹</button>
+  <img id="lbi" alt="">
+  <button class="lb-n lb-next" id="lbn" type="button" aria-label="Ảnh sau">›</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
